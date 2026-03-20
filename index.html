@@ -1,184 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tp1</title>
     <link rel="stylesheet" href="style.css">
-    
 </head>
+
 <body>
-    <!--section barre de recherche en haut-->
+
+    <!-- HEADER / NAVBAR -->
     <header>
-        <nav id="BarreHaut">
-            <div class="ActionPlanete">
-            <h1> Action PLANète B</h1>
-            <img src="images/ico-logo-navbar.svg" alt="">
-            </div>
-            <div class="PlaneteListes">
-            <ul>
-                <li>Accueil</li>
-                <li>À propos</li>
-                <li>Nos services</li>
-                <li>Activités</li>
-                <li>Témoignages</li>
-                <li>Nos rejoindre</li>
-            </ul>
+        <nav class="navbar">
+            <div class="navbar__brand">
+                <img src="images/ico-logo-navbar.svg" alt="logo">
+                <h1>Action Planète B</h1>
+
             </div>
 
-            <div class="BoutonEngagezVous">
-                <button>Engagez-vous avec nous</button>
+            <div class="navbar__links">
+                <a href="#">Accueil</a>
+                <a href="#">À propos</a>
+                <a href="#">Nos services</a>
+                <a href="#">Activités</a>
+                <a href="#">Témoignages</a>
+                <a href="#">Nous rejoindre</a>
+            </div>
+
+            <div class="navbar__cta">
+                <button class="btn btn--primary">Engagez-vous avec nous</button>
             </div>
         </nav>
     </header>
-<!-- Section titre avec l'image-->
 
-    <section id="Title">
-    <h2>Rejoindre notre lutte pour la planète</h2>
-
-    <div class="paragraphe">
-    <p class="couleurVert">Ensemble, nous pouvons faire la difference.</p>
-    </div>
-
-    <div class="boutonTitre">
-    <button> En savoir plus</button>
-    <button>Agir Maintenant</button>
-    </div>
-
-    <section class="ImagesTtire">
-    <img src="images/foret.jpg" alt="">
-    <img src="images/feuille.jpg" alt="">
-</section> 
 
     <main>
-         <!-- Section À propos-->
-    <section id=" apropos">
-        <div class="apropostitre">
-    <h2 class="AproposCouleur">À propos</h2>
-    <p>Nous sommes une ONG dédiée à la protection de notre environement.
-        Notre mission est de sensibiliser et d'agir pour un monde plus durable.
-    </p>
-    </div>
 
-    <div class="aproposParagraphe">
-        <div class="descMission">
-    <h3>Notre Mission</h3>
-    <p>Nous croyons en une approche collaborative pour préserver les ressources de la planète.
-        Équipe ONG
-    </p>
-    </div>
-    
-    <div class="DescVision">
-    <h3>Notre Vision</h3>
-    <p>Unir les communautés, pour un avenir écologique.
-        Équipe ONG
-    </p>
-    </div>
-    </div>
-    </section>
+        <!-- HERO -->
+        <section class="hero">
+            <div class="hero__text">
+                <h2 class="hero__title">Rejoindre notre lutte pour la planète🌱</h2>
+                <p class="text--highlight">Ensemble, nous pouvons faire la différence.</p>
 
-    <!--Section Service-->
-    <section id="Service">
-        <div class="serviceTtire">
-     <h2> Service</h2>
-     </div>
 
-     <div class="descServiceTop">
-        <div class="DescService">
-     <div class="Education">
-     <h3>Éducation</h3> 
-     <p>Sensibilisation à l'environnement et ateliers collectifs.</p> 
-     </div>
+                <div class="hero__buttons">
+                    <button class="hero__button__primary">En savoir plus</button>
+                    <button class="hero__button__secondary">Agir maintenant</button>
+                </div>
+            </div>
 
-     <div class="Projets">
-     <h3>Projets</h3> 
-     <p>Mises en oeuvre de projets écologique</p>
-     </div>
+            <section class="hero__image">
+                <img src="images/ico-hero.png" alt="">
+            </section>
+        </section>
 
-     <div class="Cooperation">
-     <h3>Coopération</h3>
-     <p>Collaboration avec d'autres ONG et communautés</p>
-     </div>
-     </div>
-     </div>
-    </section>
+        <!-- ABOUT -->
+        <section class="about">
+            <div class="about__header">
+                <h2 class="about__title">À propos</h2>
+                <p class="about_desc">Nous sommes une ONG dédiée à la protection de notre environnement.</p>
+            </div>
 
-    <!--Section Activités-->
-    <section id="Activites">
-        <div class="DescActivite">
-    <h2 class="ActiviteCouleur">Liste des Activités</h2>
+            <div class="about__content">
+                <div class="about__block">
+                    <img src="images/ico-mission.svg" alt="">
+                    <div class="about__text">
+                        <h3> Notre Mission</h3>
+                        <p>Approche collaborative pour préserver la planète.</p>
+                        <p class="about__name">Équipe ONG</p>
+                    </div>
 
-    <div class="ActiviteEnsemble"> 
-    <div class="Mensuelles">
-    <p>Découvrez nos activités mensuelles.</p>
-    </div>
-    </div>
-    
+                </div>
 
-    <div class="Atelier">
-    <p> Atelier de jardinage 15 mars</p>
-    </div>
+                <div class="about__block">
+                    <img src="images/ico-vision.svg" alt="">
+                    <h3> Notre Vision</h3>
+                    <p>Unir les communautés pour un avenir écologique.</p>
+                    <p class="about__name">Équipe ONG</p>
+                </div>
+            </div>
+        </section>
 
-    <div class="JourneeMondial">
-    <p> Journée Mondial de l'eau 22 Mars</p>
-    </div>
+        <!-- SERVICES -->
+        <section class="services">
+            <div class="services__header">
+                <h2>Services</h2>
+            </div>
 
-    <div class="Plantation">
-    <p>Plantation d'arbres 05 Avril</p>
-    </div>
-    </div>
-    
-    </section>
-    <!--Section Témoignages-->
-    <section id="Temoignages">
-        <div class="H2Temoignages">
-    <h2>Témoignages</h2>
-    </div>
+            <div class="services__list">
+                <div class="services__card">
+                     <img src="images/ico-education.svg" alt="">
+                     <div class="services__text">
+                    <h3>Éducation</h3>
+                    <p>Sensibilisation environnementale.</p>
+                </div>
+                </div>
 
-    <div class="DescTemoignagesTop">
-    <div class="DescTemoignages">
-    <h3>Anne</h3>
-    <p>Cette ONG change vraiment les choses.</p>
-    <h3>Pierre</h3>
-    <p>Je suis fier de contribuer à cette cause.</p>
-    <h3>George</h3>
-    <p>On a besoin de s'activer collectivement pour sauver la planète!</p>
-    </div>
-    </div>
-    </section>
+                <div class="services__card">
+                    <img src="images/ico-projets.svg" alt="">
+                    <div class="services__text">
+                    <h3>Projets</h3>
+                    <p>Projets écologiques.</p>
+                </div>
+                </div>
 
-    <!--Section Contactez-nous-->
-    <section id="Contacteznous">
-        <h1 class="ConctacterCouleur">Conctacter-nous</h1>
-    <h3>Nom</h3>
-   <form>
-    <input type="text" placeholder="Entrez votre nom">
-   </form>
+                <div class="services__card">
+                    <img src="images/ico-cooperation.svg" alt="">
+                     <div class="services__text">
+                    <h3>Coopération</h3>
+                    <p>Collaboration ONG.</p>
+                </div>
+            </div>
+            </div>
+        </section>
 
-   <h3>Email</h3>
-   <form>
-    <input type="text" placeholder="Entrez votre email">
-   </form>
+        <!-- ACTIVITIES -->
+        <section class="activities">
+            <div class="activities__header">
+                <h2> Liste des activités</h2>
+                <p class="activities__desc">Découvrez nos activités mensuelles.</p>
+            </div>
 
-   <h3>Message</h3>
-   <form>
-    <input type="text" placeholder="Votre message">
-   </form>
-   <button> Envoyer</button>
-   </section>
+            <div class="activities__list">
+                <div class="activities__card">🌱 Atelier jardinage - 15 mars</div>
+                <div class="activities__card">🌎 Journée mondiale de l'eau - 22 mars</div>
+                <div class="activities__card">🌳Plantation d'arbres - 5 avril</div>
+            </div>
+        </section>
+
+        <!-- TESTIMONIALS -->
+        <section class="testimonials">
+            <h2> Témoignages </h2>
+
+            <div class="testimonials__list">
+                <div class="card">
+                    <h3>Anne</h3>
+                    <p>Cette ONG change vraiment les choses.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Pierre</h3>
+                    <p>Je suis fier de contribuer.</p>
+                </div>
+
+                <div class="card">
+                    <h3>George</h3>
+                    <p>On doit agir collectivement.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section class="contact">
+            <h2 class="contact__title">Contactez-nous</h2>
+
+            <!-- UN SEUL FORM -->
+            <form class="contact__form">
+                <div class="form__group">
+                    <label>Nom</label>
+                    <input type="text" placeholder="Entrez votre nom">
+                </div>
+
+                <div class="form__group">
+                    <label>Email</label>
+                    <input type="text" placeholder="Entrez votre email">
+                </div>
+
+                <div class="form__group">
+                    <label>Message</label>
+                    <input type="text" placeholder="Votre message">
+                </div>
+
+                <button class="btn btn--primary">Envoyer</button>
+            </form>
+        </section>
 
     </main>
+
+    <!-- FOOTER -->
     <footer>
-        <!-- Section liens en bas de page-->
-         <nav id="Basdepage">
-         <p>liens rapides</p>
-         <p> À propos de nous</p>
-         <p>Nous contacter</p>
-         <p>Suivez-nous sur les réseaux sociaux</p>
-         <button>Engagez-vous avec nous</button>
-         </nav>
-        
+        <nav class="footer">
+            <p>Liens rapides</p>
+            <p>À propos</p>
+            <p>Contact</p>
+            <p>Réseaux sociaux</p>
+            <button class="btn">Engagez-vous</button>
+        </nav>
     </footer>
-    
+
 </body>
+
 </html>
