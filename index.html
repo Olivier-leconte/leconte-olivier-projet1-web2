@@ -10,12 +10,12 @@
 
 <body>
 
-    <!-- HEADER / NAVBAR -->
+    <!-- sectionde navbar barre en haut -->
     <header>
         <nav class="navbar">
             <div class="navbar__brand">
                 <img src="images/ico-logo-navbar.svg" alt="logo">
-                <h1>Action Planète B</h1>
+                <h1>Action PLANète B</h1>
 
             </div>
 
@@ -37,7 +37,7 @@
 
     <main>
 
-        <!-- HERO -->
+        <!-- section de hero -->
         <section class="hero">
             <div class="hero__text">
                 <h2 class="hero__title">Rejoindre notre lutte pour la planète🌱</h2>
@@ -45,8 +45,8 @@
 
 
                 <div class="hero__buttons">
-                    <button class="hero__button__primary">En savoir plus</button>
-                    <button class="hero__button__secondary">Agir maintenant</button>
+                    <button class="hero__button--primary">En savoir plus</button>
+                    <button class="hero__button--secondary">Agir maintenant</button>
                 </div>
             </div>
 
@@ -55,11 +55,11 @@
             </section>
         </section>
 
-        <!-- ABOUT -->
+        <!-- section de a propos -->
         <section class="about">
             <div class="about__header">
                 <h2 class="about__title">À propos</h2>
-                <p class="about_desc">Nous sommes une ONG dédiée à la protection de notre environnement.</p>
+                <p class="about__desc">Nous sommes une ONG dédiée à la protection de notre environnement.</p>
             </div>
 
             <div class="about__content">
@@ -82,98 +82,116 @@
             </div>
         </section>
 
-        <!-- SERVICES -->
+        <!-- section de services -->
         <section class="services">
-            <div class="services__header">
+            <div class="services__title">
                 <h2>Services</h2>
             </div>
 
             <div class="services__list">
                 <div class="services__card">
-                     <img src="images/ico-education.svg" alt="">
-                     <div class="services__text">
-                    <h3>Éducation</h3>
-                    <p>Sensibilisation environnementale.</p>
-                </div>
+                    <img src="images/ico-education.svg" alt="">
+                    <div class="services__text">
+                        <h3>Éducation</h3>
+                        <p>Sensibilisation environnementale.</p>
+                    </div>
                 </div>
 
                 <div class="services__card">
                     <img src="images/ico-projets.svg" alt="">
                     <div class="services__text">
-                    <h3>Projets</h3>
-                    <p>Projets écologiques.</p>
-                </div>
+                        <h3>Projets</h3>
+                        <p>Projets écologiques.</p>
+                    </div>
                 </div>
 
                 <div class="services__card">
                     <img src="images/ico-cooperation.svg" alt="">
-                     <div class="services__text">
-                    <h3>Coopération</h3>
-                    <p>Collaboration ONG.</p>
+                    <div class="services__text">
+                        <h3>Coopération</h3>
+                        <p>Collaboration ONG.</p>
+                    </div>
                 </div>
-            </div>
             </div>
         </section>
 
-        <!-- ACTIVITIES -->
         <section class="activities">
-            <div class="activities__header">
-                <h2> Liste des activités</h2>
+            <div class="activities__title">
+                <h2>Liste des activités</h2>
                 <p class="activities__desc">Découvrez nos activités mensuelles.</p>
             </div>
 
             <div class="activities__list">
-                <div class="activities__card">🌱 Atelier jardinage - 15 mars</div>
-                <div class="activities__card">🌎 Journée mondiale de l'eau - 22 mars</div>
-                <div class="activities__card">🌳Plantation d'arbres - 5 avril</div>
+
+                <div class="activities__card">
+                    <div class="activities__details">
+                        🌱 Atelier jardinage
+                    </div>
+                    <span class="activities__date">15 Mars</span>
+                </div>
+
+                <div class="activities__card">
+                    <div class="activities__details">
+                        🌎 Journée mondiale de l'eau
+                    </div>
+                    <span class="activities__date">22 Mars</span>
+                </div>
+
+                <div class="activities__card">
+                    <div class="activities__details">
+                        🌳 Plantation d'arbres
+                    </div>
+                    <span class="activities__date">03 Avril</span>
+                </div>
+
             </div>
         </section>
 
-        <!-- TESTIMONIALS -->
-        <section class="testimonials">
-            <h2> Témoignages </h2>
 
+        <!-- section de temoignages -->
+        <section class="testimonials">
             <div class="testimonials__list">
-                <div class="card">
+                <div class="testimonials__card">
+                    <img src="images/ico-avatar.svg" alt="">
                     <h3>Anne</h3>
                     <p>Cette ONG change vraiment les choses.</p>
                 </div>
 
-                <div class="card">
+                <div class="testimonials__card">
+                    <img src="images/ico-avatar.svg" alt="">
                     <h3>Pierre</h3>
                     <p>Je suis fier de contribuer.</p>
                 </div>
 
-                <div class="card">
+                <div class="testimonials__card">
+                    <img src="images/ico-avatar.svg" alt="">
                     <h3>George</h3>
                     <p>On doit agir collectivement.</p>
                 </div>
             </div>
+            <h2 class="testimonials__title">Témoignages</h2>
         </section>
 
-        <!-- CONTACT -->
+        <!-- section de contact -->
         <section class="contact">
             <h2 class="contact__title">Contactez-nous</h2>
-
-            <!-- UN SEUL FORM -->
             <form class="contact__form">
-                <div class="form__group">
-                    <label>Nom</label>
-                    <input type="text" placeholder="Entrez votre nom">
+                <div class="contact__group">
+                    <label class="contact__name">Nom</label>
+                    <input class="contact__box" type="text" placeholder="Entrez votre nom">
                 </div>
 
-                <div class="form__group">
-                    <label>Email</label>
-                    <input type="text" placeholder="Entrez votre email">
+                <div class="contact__group">
+                    <label class="contact__name">Email</label>
+                    <input class="contact__box" type="text" placeholder="Entrez votre email">
                 </div>
 
-                <div class="form__group">
-                    <label>Message</label>
-                    <input type="text" placeholder="Votre message">
+                <div class="contact__group">
+                    <label class="contact__name">Message</label>
+                    <input class="contact__box" type="text" placeholder="Votre message">
                 </div>
-
-                <button class="btn btn--primary">Envoyer</button>
             </form>
+            <button class="btn btn--primary">Envoyer</button>
         </section>
 
     </main>
@@ -185,7 +203,7 @@
             <p>À propos</p>
             <p>Contact</p>
             <p>Réseaux sociaux</p>
-            <button class="btn">Engagez-vous</button>
+            <button class="btn__footer">Engagez-vous avec nous</button>
         </nav>
     </footer>
 
