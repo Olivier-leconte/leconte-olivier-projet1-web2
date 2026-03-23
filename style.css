@@ -2,14 +2,14 @@
    DESIGN TOKENS
 ======================== */
 :root {
-  /* COLORS */
+  /* couleurs */
   --color-primary: #2f5d3a;
   --color-secondary: #8bc34a;
   --color-background: #F5F5DC;
   --color-text: #333;
   --color-white: #ffffff;
 
-  /* SPACING */
+  /* l'espacement */
   --space-xs: 0.25rem;
   --space-sm: 0.5rem;
   --space-md: 1rem;
@@ -17,7 +17,7 @@
   --space-lg: 2rem;
   --space-xl: 4rem;
 
-  /* TYPOGRAPHY */
+  /* typo */
   --font-size-sm: 0.8rem;
   --font-size-base: 1rem;
   --font-size-lg: 1.5rem;
@@ -30,6 +30,34 @@ body{
   margin: 0;
   min-width: 800px;
 }
+
+
+/*  Navbar
+Elle permet de faire la navigation depuis le site. Elle se retrouve en haut de la page. 
+Elle inclut des liens de navigation et un bouton qui permet de faire une action
+
+Voici la structure de l'HTML
+navbar
+navbar__brand
+ img
+  H1
+navbar__links
+ a
+ a
+ a
+navbar__cta
+ btn.btn--primary
+ 
+
+ (B)(E)(M):
+ navbar__brand: englobe le conteneur du logo et le titre
+ navbar__links: englobe le conteneur des liens 
+ navbar_cta: englobe le conteneur du bouton
+
+ la variante utilisé du bouton est celui-ci
+ .btn--primary = Bouton utiliser dans le navbar et le footer
+ */ 
+ 
 
 
 .navbar{
@@ -68,6 +96,35 @@ border-radius: var(--space-sm);
 .btn--primary{
   background-color: var(--color-secondary);
 }
+
+
+
+/*   Hero
+Elle permet de voir les images principaux, messages et deux boutons .
+
+Voici la structure de l'HTML
+hero
+ hero__text
+  hero__title
+   text--highlight
+  hero__boutons
+   hero__button--primary
+   hero__button--secondary
+  hero__image
+   img
+
+ (B)(E)(M):
+ hero__text: sert a englober le contenue du titre avec le p et les boutons
+ hero__title: le titre principale
+ hero__buttons: regroupe les boutons ¸
+ hero__image: le contenueur qui sert a voir l'image à droite
+
+
+Variantes
+ hero__buttons--primary: le principal bouton
+ hero__buttons--secondary: le deuxieme bouton
+ */ 
+
 
 
 .hero{
@@ -143,6 +200,43 @@ border-radius: 0.5rem;
 background: var(--color-primary);
 }
 
+
+
+
+/*  About
+section prensentation de l'organisme
+
+Voici la structure de l'HTML
+about
+ about__header
+  about__title
+  about__desc
+ about__content
+  about__block
+   img
+  about__text
+   h3
+   p
+  about__name
+ 
+
+ (B)(E)(M):
+ about__header: le conteneur du titre et de la description l'en-tête un peu.
+ about__title: le titre du conteneur
+ about__desc: description du conteneur
+ about__content: le conteneur des petites cartes
+ about__block: l'information du conteneur
+ about__name: nom de l'organimsme
+
+
+Variantes
+ Aucune variante utilisée dans cette section 
+*/
+
+
+
+
+
 .about{
 display: flex;
 padding: 60px 170px;
@@ -210,6 +304,34 @@ flex: 1 0 0;
 }
 
 
+
+
+/*  Services
+ Section qui sert à montrer les services que l'organisme propose
+
+Voici la structure de l'HTML
+services
+ services__title
+  h2
+ services__list
+ services__card
+  img
+ services__text
+  h3
+  p
+ 
+
+ (B)(E)(M):
+ services__title: Il s'agit du titre du conteneur 
+ services__list: Regroupe les cartes
+ services__card: Il s'agit de la carte`
+ services__text: la description des cartes
+
+Variantes
+ Aucune variante utilisé dans cette section 
+*/
+
+
 .services{
 display: flex;
 padding: 60px 170px;
@@ -263,6 +385,37 @@ flex-direction: column;
 }
 
 
+
+
+/*  Activities
+ Section qui sert à montrer les activitées proposées par l'organisme
+
+Voici la structure de l'HTML
+  activities
+  activities__title
+  h2
+  activities__desc
+  activities__list
+  activities__card
+  activities__details
+  activities__date
+ 
+
+ (B)(E)(M):
+  activitites__title: Conteneur du titre et de la description
+  activities__desc: Details de la section
+  activities__list: Englobe les activités
+  activities__card: S'agit d'une activité individuelle
+  activities__details: Description de l'activité
+  activities__date: La date de l'activité
+
+
+Variantes
+ Aucune variante utilisée dans cette section 
+*/
+
+
+
 .activities{
 display: flex;
 padding: 60px 170px;
@@ -314,6 +467,29 @@ border-bottom: 0.1rem solid var(--color-secondary);
 
 
 
+/*  Testimonials
+ Section qui montre les témoignages 
+
+Voici la structure de l'HTML
+testimonials
+testimonials__list
+testimonials__Card
+img
+h3
+p
+ 
+
+ (B)(E)(M):
+ testimonials__list: Regroupe le conteneur des cartes 
+ testimonials__card: Cartes des témoignages
+ testimonials__title: Titre 
+
+Variantes
+ Aucune variante utilisée dans cette section 
+*/
+
+
+
 .testimonials{
 display: flex;
 padding: 60px 170px;
@@ -359,6 +535,34 @@ font-style: normal;
 font-weight: 700;
 line-height: 48px;
 }
+
+
+
+/*  Contact
+ Section qui sert à mettre ses informations pour contacter l'organisme
+
+Voici la structure de l'HTML
+contact
+contact__title
+contact__form
+contact__group
+contact__name
+contact__box
+btn.btn--primary
+
+ 
+
+ (B)(E)(M):
+ contact__title: Titre du contenue
+ contact__form: Contenue du formulaire
+ contact__group: Champ/label permettant de remplir 
+ contact__name: Nom du contenue
+ contact__box: Permet de remplir 
+
+Variantes
+ btn--primary : Bouton d'action d'envoyer le formulaire
+*/
+
 
 
 .contact{
@@ -430,6 +634,27 @@ background: var(--color-white);
 }
 
 
+
+
+/*  Footer
+ Section pied de page qui contient les liens et un bouton 
+
+Voici la structure de l'HTML
+footer
+p
+p
+p
+p
+btn__footer
+
+ 
+
+ (B)(E)(M):
+ Aucun élément n'est present
+
+Variantes
+ aucune variante utilisée
+*/
 
 .footer{
 display: flex;
